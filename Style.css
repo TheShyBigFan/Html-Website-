@@ -129,6 +129,7 @@
     width: 100%;
     max-height: 70vh;
     border-radius: 8px;
+    animation: callPulse 1.5s infinite;
 }
 
 .popupButtons{
@@ -136,6 +137,7 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    animation: callPulse 1.5s infinite;
 }
 
 /* Red and Green Buttons */
@@ -192,4 +194,22 @@
     border-radius: 10px;
     text-align: center;
     width: 400px;
+    animation: callPulse 1.5s infinite;
+}
+/* Animation of call popup */
+@keyframes callPulse {
+    0% {
+        filter: brightness(100%);
+        transform: scale(1);
+    }
+
+    50% {
+        filter: brightness(60%);
+        transform: scale(1.2);
+    }
+
+    100% {
+        filter: brightness(100%);
+        transform: scale(1);
+    }
 }

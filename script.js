@@ -7,15 +7,22 @@ let loans = document.getElementById("loans");
 let acceptcall = document.getElementById("accept");
 let declinecall = document.getElementById("decline");
 let music = document.getElementById("myMusic");
+let callSound = document.getElementById("callSound");
+
+
+callSound.play();
+
 
     acceptcall.onclick = function(){
         popup.style.display = "none";
         music.play();
+        callSound.pause();
     };
 
 declinecall.onclick = function(){
     popup.style.display = "none";
     music.play();
+    callSound.pause();
 };
 
 
